@@ -2,7 +2,7 @@
 
 ## Why Rayls
 
-Agama exists because Rayls exists. The assets we vault — invoices, receivables, private credit — cannot go on a public chain. Debtor identities are commercially sensitive. Invoice amounts between regulated counterparties are confidential. Rayls is the only blockchain infrastructure that allows financing these assets on-chain while concealing counterparties.
+Agama exists because Rayls exists. The assets we vault (invoices, receivables, private credit) cannot go on a public chain. Debtor identities are commercially sensitive. Invoice amounts between regulated counterparties are confidential. Rayls is the only blockchain infrastructure that allows financing these assets on-chain while concealing counterparties.
 
 ## Mainnet architecture (April 30, 2026)
 

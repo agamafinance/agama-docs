@@ -6,7 +6,7 @@
 |--------|---------------|----------------|
 | Performance fee | 10% of yield above hurdle | 15% |
 | Curation fee | 0% | 5 bps on AUM |
-| Oracle fees (V3) | — | Flat monthly + per-tx on third-party vaults |
+| Oracle fees (V3) |. | Flat monthly + per-tx on third-party vaults |
 
 50% of performance fees at launch are directed toward TVL growth incentives. TVL first.
 
@@ -25,7 +25,7 @@ No fundraising required for V1. The Rayls development grant and Nimofast onboard
 
 ## V3 revenue model shift
 
-At V1-V2, revenue comes from curator fees on Agama's own vaults. This is real but not defensible — any team can build a competing vault on Lagoon.
+At V1-V2, revenue comes from curator fees on Agama's own vaults. This is real but not defensible: any team can build a competing vault on Lagoon.
 
 At V3, revenue shifts to oracle fees. Every third-party vault that reads private asset NAV through an Agama Node pays oracle fees. This is recurring, infrastructure-level revenue independent of Agama's own AUM. Even if Agama stops curating vaults entirely, the oracle network generates fees.
 

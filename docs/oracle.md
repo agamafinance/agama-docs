@@ -1,10 +1,10 @@
 # NAV Oracle
 
-The NAV Oracle is the core proprietary technology Agama builds. Everything else — vault shell, fees, KYC, reporting — is provided by Lagoon. The oracle is what makes Agama structurally non-replaceable, and what makes it one of the first verifiable bridges between a private institutional chain and public DeFi.
+The NAV Oracle is the core proprietary technology Agama builds. Everything else (vault shell, fees, KYC, reporting) is provided by Lagoon. The oracle is what makes Agama structurally non-replaceable, and what makes it one of the first verifiable bridges between a private institutional chain and public DeFi.
 
 ## The problem: bridging private to public
 
-For an invoice sitting on Nimofast's Privacy Node to generate yield in a public Lagoon vault, something has to bridge the gap between the two layers. Without this bridge, the invoices stay locked — invisible, non-valorizable, non-existent for the public vault.
+For an invoice sitting on Nimofast's Privacy Node to generate yield in a public Lagoon vault, something has to bridge the gap between the two layers. Without this bridge, the invoices stay locked, invisible, non-valorizable, non-existent for the public vault.
 
 ```
 PRIVACY NODE (Nimofast)
@@ -34,13 +34,13 @@ This is not a Nimofast problem. It is a structural problem for every institution
 
 Most oracle designs in DeFi rely on a multisig attestation: a trusted party signs a value and publishes it on-chain. If the signer lies, it is only detectable after the fact.
 
-Agama does not use attestations. The NAV Oracle generates a real ZK proof using gnark — the same library used by Enygma internally. The proof is verified on-chain by anyone, instantly. If the NAV is wrong, the proof is invalid and the smart contract rejects it. Agama cannot lie.
+Agama does not use attestations. The NAV Oracle generates a real ZK proof using gnark, the same library used by Enygma internally. The proof is verified on-chain by anyone, instantly. If the NAV is wrong, the proof is invalid and the smart contract rejects it. Agama cannot lie.
 
 This is possible because Enygma uses Pedersen commitments to store balances. A Pedersen commitment is `C = v*G + r*H` where `v` is the value and `r` is a blinding factor. The critical property: Pedersen commitments are homomorphic. You can add commitments without knowing the individual values. `C1 + C2` is itself a valid commitment for `(v1 + v2)` without revealing `v1` or `v2` separately. This means the circuit can verify portfolio-level properties without exposing individual invoice data.
 
 ## The Oracle Sidecar
 
-Agama builds and maintains a software process — the Oracle Sidecar — that runs alongside each institution's Privacy Node. The institution runs it. Agama owns the code.
+Agama builds and maintains a software process, the Oracle Sidecar, that runs alongside each institution's Privacy Node. The institution runs it. Agama owns the code.
 
 ```
 PRIVACY NODE (Nimofast)
@@ -136,19 +136,19 @@ The circuit is written in Go using gnark (ConsenSys ZK library, production-ready
 ```
 gnark workflow:
 
-  STEP 1 — Write the circuit (nav_circuit.go)
+  STEP 1. Write the circuit (nav_circuit.go)
            Defines mathematical constraints
 
-  STEP 2 — Compile the circuit (one-time)
+  STEP 2. Compile the circuit (one-time)
            gnark.Compile() → generates AgamaVerifier.sol
            + proving key (sidecar keeps this)
            + verifying key (deployed on-chain)
 
-  STEP 3 — Deploy the verifier
+  STEP 3. Deploy the verifier
            AgamaVerifier.sol deployed on Rayls Public Chain
            One-time deployment
 
-  STEP 4 — Generate proofs (every NAV update)
+  STEP 4. Generate proofs (every NAV update)
            Sidecar reads invoices via view key
            Computes NAV + tranching
            gnark.Prove() → proof π
@@ -281,7 +281,7 @@ contract AgamaOracle {
 }
 ```
 
-Anyone can call `verifyProof()` and cryptographically confirm that the published NAV is correct — without seeing any private data. This is the real oracle.
+Anyone can call `verifyProof()` and cryptographically confirm that the published NAV is correct, without seeing any private data. This is the real oracle.
 
 ## What makes this a first
 

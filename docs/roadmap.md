@@ -1,12 +1,12 @@
 # Roadmap
 
-## V1 — Curator on Lagoon (April 30, 2026)
+## V1. Curator on Lagoon (April 30, 2026)
 
 Deploy agaINV on Rayls mainnet day one. Prove the concept with Nimofast. Build the NAV oracle.
 
 | Component | Status |
 |-----------|--------|
-| NAV oracle — gnark ZK proof with TrancheNAV (Go): enygma_client.go, nav_circuit.go, AgamaVerifier.sol, onchain_relay.go | Build |
+| NAV oracle. gnark ZK proof with TrancheNAV (Go): enygma_client.go, nav_circuit.go, AgamaVerifier.sol, onchain_relay.go | Build |
 | Lagoon curator setup (agaINV on Rayls Public Chain) | Configure |
 | USDXP deposit flow | Integrate |
 | USDr gas management | Integrate |
@@ -17,7 +17,7 @@ Deploy agaINV on Rayls mainnet day one. Prove the concept with Nimofast. Build t
 
 **Target: 1M AUM**
 
-## V2 — Lending Market + RWA Looping (6-12 months)
+## V2. Lending Market + RWA Looping (6-12 months)
 
 Dependent on a native lending market deploying on the Rayls Public Chain.
 
@@ -32,9 +32,9 @@ Dependent on a native lending market deploying on the Rayls Public Chain.
 
 **Target: 10M AUM**
 
-## V3 — Oracle Network + Independent Protocol (12-24 months)
+## V3. Oracle Network + Independent Protocol (12-24 months)
 
-The real V3 is not just building our own vault protocol. It is deploying Agama Oracle Nodes at every Rayls institutional partner. The vault protocol is a consequence — once we control the oracle layer, every vault built on top has a structural advantage.
+The real V3 is not just building our own vault protocol. It is deploying Agama Oracle Nodes at every Rayls institutional partner. The vault protocol is a consequence. once we control the oracle layer, every vault built on top has a structural advantage.
 
 | Component | Description |
 |-----------|-------------|
@@ -47,10 +47,10 @@ The real V3 is not just building our own vault protocol. It is deploying Agama O
 ```
 The real business at V3:
 
-  Not curator fees (0.5% AUM) — that's the V1 business
+  Not curator fees (0.5% AUM). that's the V1 business
 
   Oracle fees on every vault that reads private asset NAV
-  through an Agama Node — that's the V3 business
+  through an Agama Node. that's the V3 business
 
   Chainlink model: own the software, institutions run the nodes
   Data is confidential → only Agama sidecar can read it
@@ -59,7 +59,7 @@ The real business at V3:
 
 **Target: 100M AUM**
 
-## V4 — agaUSD Synthetic Dollar (24-36 months)
+## V4. agaUSD Synthetic Dollar (24-36 months)
 
 The first synthetic dollar backed by private credit with ZK confidentiality.
 
@@ -73,13 +73,13 @@ The first synthetic dollar backed by private credit with ZK confidentiality.
 ### agaUSD capital stack
 
 ```
-SENIOR — agaUSD (peg $1 guaranteed)
+SENIOR. agaUSD (peg $1 guaranteed)
   Priority repayment from all Credit Vaults
   Protected by stability reserve
   Zero yield for holder
   Composable as collateral / gas across Rayls
 
-JUNIOR — sagaUSD (staked agaUSD)
+JUNIOR. sagaUSD (staked agaUSD)
   First-loss buffer
   Earns Credit Vault yield (8-12% APY)
   Conversion price reduces if default occurs
@@ -102,7 +102,7 @@ STABILITY RESERVE
 
 ### Why agaUSD vs Pareto USP
 
-Pareto USP is backed by public private credit — borrowers like FalconX are visible on-chain. Any institution can see who borrows in the Credit Vaults.
+Pareto USP is backed by public private credit. borrowers like FalconX are visible on-chain. Any institution can see who borrows in the Credit Vaults.
 
 agaUSD is backed by confidential private credit on Rayls. The debtors behind the invoices (Petrobras, Shell, energy distributors) remain concealed via Enygma ZK proofs. For an institution that does not want competitors to see its financing activity, agaUSD is the only synthetic dollar with end-to-end confidentiality.
 

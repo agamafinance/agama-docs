@@ -20,18 +20,18 @@ The critical difference is the asset class. Avantgarde works with assets that ar
 
 ## Agama vs Pareto Credit (V3-V4 target)
 
-Pareto Credit is the protocol Agama aims to become at V3-V4. They started as Idle Finance (a yield aggregator sending liquidity to Aave and Compound), realized they captured zero value because TVL was retained by third-party protocols, and built their own credit marketplace with Credit Vaults, tranching, and USP — a synthetic dollar backed by private credit.
+Pareto Credit is the protocol Agama aims to become at V3-V4. They started as Idle Finance (a yield aggregator sending liquidity to Aave and Compound), realized they captured zero value because TVL was retained by third-party protocols, and built their own credit marketplace with Credit Vaults, tranching, and USP, a synthetic dollar backed by private credit.
 
 | | Pareto Credit | Agama (V3-V4 target) |
 |---|---|---|
 | Origin | Yield aggregator (Idle Finance) → built own protocol | Vault curator on Lagoon → building own protocol |
-| Synthetic dollar | USP — mint 1:1 against USDC. Backed by Credit Vaults lending to institutional borrowers (FalconX, trading firms) | agaUSD — mint 1:1 against USDXP. Backed by Credit Vaults financing private invoices and trade finance |
-| Yield layer | sUSP — staked USP absorbs first-loss risk, earns Credit Vault yield | sagaUSD — staked agaUSD absorbs first-loss risk, earns 8-12% APY from invoice spreads |
+| Synthetic dollar | USP: mint 1:1 against USDC. Backed by Credit Vaults lending to institutional borrowers (FalconX, trading firms) | agaUSD: mint 1:1 against USDXP. Backed by Credit Vaults financing private invoices and trade finance |
+| Yield layer | sUSP: staked USP absorbs first-loss risk, earns Credit Vault yield | sagaUSD: staked agaUSD absorbs first-loss risk, earns 8-12% APY from invoice spreads |
 | Peg stability | Native backing (1:1 mint), arbitrage mechanism, stability reserve | Same: native backing, stability reserve funded by performance fees (target 3-5% TVL) |
 | Credit Vaults | Lend to vetted institutional borrowers. Borrowers are public (FalconX visible on-chain) | Finance private institutional receivables. Debtor identities concealed via Enygma ZK proofs |
 | Privacy | None. All positions, borrowers, and amounts are public on Ethereum | End-to-end confidentiality. Debtors (Petrobras, Shell) remain private. Only ZK-verified NAV is public |
 | Chain | Ethereum mainnet | Rayls (privacy-native) |
-| Token | $PAR — governance + revenue sharing | $AGA — governance + revenue sharing (V4 only, after 100M AUM) |
+| Token | $PAR: governance + revenue sharing | $AGA: governance + revenue sharing (V4 only, after 100M AUM) |
 
 The key difference: Pareto's Credit Vaults lend to publicly visible borrowers on Ethereum. Agama's Credit Vaults finance private assets where debtor identity is commercially sensitive and must remain confidential. For an institution that does not want competitors to see its financing activity, agaUSD is the only synthetic dollar with end-to-end ZK confidentiality.
 

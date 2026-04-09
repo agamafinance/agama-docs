@@ -2,9 +2,9 @@
 
 The NAV Oracle is not just a technical component of agaINV. It is the core of Agama's long-term business.
 
-Every Rayls institutional partner — Nimofast, Santander, Nuclea, AmFi — has assets sitting on their Privacy Node that generate zero yield for DeFi investors. For those assets to be accessible, something has to read the private data and publish a verified NAV on the public chain. That something is the Agama Oracle Sidecar. Without it, private assets remain locked and invisible. With it, they become financeable.
+Every Rayls institutional partner. Nimofast, Santander, Nuclea, AmFi. has assets sitting on their Privacy Node that generate zero yield for DeFi investors. For those assets to be accessible, something has to read the private data and publish a verified NAV on the public chain. That something is the Agama Oracle Sidecar. Without it, private assets remain locked and invisible. With it, they become financeable.
 
-Agama deploys the sidecar at Nimofast in V1 to prove the concept. In V3, the goal is to deploy it at every institutional partner on Rayls. At that point, Agama is no longer a vault curator. It is the infrastructure layer that connects private institutional credit to public DeFi — on every Privacy Node in the Rayls ecosystem.
+Agama deploys the sidecar at Nimofast in V1 to prove the concept. In V3, the goal is to deploy it at every institutional partner on Rayls. At that point, Agama is no longer a vault curator. It is the infrastructure layer that connects private institutional credit to public DeFi. on every Privacy Node in the Rayls ecosystem.
 
 ## The problem Agama solves at infrastructure level
 
@@ -37,7 +37,7 @@ Without a bridge, the entire private asset ecosystem on Rayls has no access to D
 
 ## The Oracle Sidecar
 
-Agama builds and maintains a software process — the Oracle Sidecar — that runs alongside each institution's Privacy Node. The institution runs it. Agama owns the code.
+Agama builds and maintains a software process. the Oracle Sidecar. that runs alongside each institution's Privacy Node. The institution runs it. Agama owns the code.
 
 ```
 PRIVACY NODE (Nimofast)
@@ -85,7 +85,7 @@ What stays private: everything on the Privacy Node. The sidecar decrypts data lo
 
 ## Why this is the real moat
 
-The vault curator fees — 10% performance fee, 5bps curation at scale — are the V1 business. They are real but not defensible at scale. Any well-capitalized team can build a competing vault on Lagoon.
+The vault curator fees. 10% performance fee, 5bps curation at scale. are the V1 business. They are real but not defensible at scale. Any well-capitalized team can build a competing vault on Lagoon.
 
 The oracle sidecar is different.
 
@@ -108,17 +108,17 @@ At V3, when the sidecar runs at five or more institutions simultaneously, any ne
 The goal is to deploy the Oracle Sidecar at every major institutional partner on Rayls. Each deployment is one more institution that is structurally dependent on Agama to connect its private assets to DeFi liquidity.
 
 ```
-V1 — April 2026
+V1. April 2026
   Nimofast (LNG energy invoices)
   1 node, 1 asset type
   Prove the sidecar works end-to-end
 
-V2 — 6-12 months post-mainnet
+V2. 6-12 months post-mainnet
   Santander Brazil (trade finance, corporate invoices)
   2 nodes, 2 asset types
   First multi-originator oracle feed
 
-V3 — 12-24 months
+V3. 12-24 months
   Nuclea (interbank receivables)
   AmFi (private credit)
   B3 Digitas (fixed income)
@@ -129,7 +129,7 @@ V3 — 12-24 months
 
 | Institution | Asset type | Vault | Node status |
 |-------------|-----------|-------|-------------|
-| Nimofast | LNG energy invoices | agaINV | V1 — deploy April 30 |
+| Nimofast | LNG energy invoices | agaINV | V1. deploy April 30 |
 | Santander Brazil | Trade finance, corporate invoices | agaTRD, agaCORP | V2 |
 | Nuclea | Interbank receivables, boletos | agaREC | V3 |
 | AmFi | Private credit | agaPC | V3 |
@@ -176,7 +176,7 @@ Chainlink    oracle for public price data
 Agama        oracle for private asset NAV
              only the sidecar with the view key can read the data
              the data is confidential by design
-             moat is structural — not just reputation
+             moat is structural. not just reputation
 ```
 
 The key difference: Chainlink's data is publicly available. Anyone can verify a price by checking multiple sources. Agama's data is not publicly available. The invoice amounts and debtor identities exist only on the Privacy Node. The only way to read them is to have the view key and run the sidecar. This makes the moat structural rather than reputational.

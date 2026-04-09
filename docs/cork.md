@@ -1,6 +1,6 @@
 # Cork Protocol
 
-Cork is not depeg insurance. Cork solves **duration risk** — the real blocker for RWA looping. This is how Avantgarde Finance uses Cork in their Protected Loops strategy.
+Cork is not depeg insurance. Cork solves **duration risk**, the real blocker for RWA looping. This is how Avantgarde Finance uses Cork in their Protected Loops strategy.
 
 ## The duration risk problem
 
@@ -28,7 +28,7 @@ Cork Swap Tokens (cST) give the right to exchange agaINV for USDXP instantly, at
 
   WITHOUT CORK                       WITH CORK cST
   ────────────                       ─────────────
-  No — 30-90 day wait                Yes — instant swap
+  No. 30-90 day wait                Yes. instant swap
   Refuse collateral                  via Cork Pool
                                            │
                                            ▼
@@ -43,7 +43,7 @@ For the lender: they accept agaINV as collateral because if the borrower default
 
 ## How Avantgarde uses Cork
 
-Avantgarde deploys Protected Loops — looping vaults where Cork Pool provides instant exit liquidity for illiquid RWA collateral. The lender (Morpho) accepts the RWA token as collateral because Cork guarantees exit liquidity. Agama follows the same model on Rayls once a native lending market becomes available.
+Avantgarde deploys Protected Loops, looping vaults where Cork Pool provides instant exit liquidity for illiquid RWA collateral. The lender (Morpho) accepts the RWA token as collateral because Cork guarantees exit liquidity. Agama follows the same model on Rayls once a native lending market becomes available.
 
 ## Cork Pool structure
 

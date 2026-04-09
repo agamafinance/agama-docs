@@ -14,7 +14,7 @@ Maturity:         60 days
 Annualized yield: ~18%
 ```
 
-This is the oldest form of finance. Trade receivables have existed for centuries. The innovation is not the yield source — it is putting it on-chain with privacy, ZK verification, and composable vault tokens.
+This is the oldest form of finance. Trade receivables have existed for centuries. The innovation is not the yield source. it is putting it on-chain with privacy, ZK verification, and composable vault tokens.
 
 ## NAV accrual
 

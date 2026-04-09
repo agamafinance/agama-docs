@@ -11,8 +11,8 @@ Agama deploys as a curator on Lagoon. We do not write, audit, or maintain any va
 | Deposit / withdrawal | Asynchronous request-then-claim handled natively | We trigger settlement cycles based on the NAV update schedule |
 | Fee management | Management fee + performance fee with high-water mark, computed automatically on-chain | We configure the parameters. Lagoon enforces them |
 | KYC / whitelist | Access control and investor whitelisting built into the vault | We manage the investor whitelist. Lagoon enforces it on-chain |
-| On-chain reporting | Full NAV history, transaction log, share price evolution — all on-chain | We provide the NAV. Lagoon records and exposes it |
-| NAV oracle | Lagoon accepts any valuation provider. The NAV feed is the curator's responsibility | We build this. The Oracle Sidecar reads invoice data via view key, generates a gnark ZK proof, and pushes the verified NAV on-chain |
+| On-chain reporting | Full NAV history, transaction log, share price evolution. all on-chain | We provide the NAV. Lagoon records and exposes it |
+| NAV oracle | Lagoon accepts any valuation provider. The NAV feed is the curator's responsibility | We build this. It is the critical piece: it reads invoice data, generates a ZK proof, and pushes the verified NAV on-chain |
 | Asset strategy | Infrastructure-agnostic. Does not decide what goes in the vault | We decide. Which invoices to buy, at what discount, with what risk parameters |
 | Investor interface | app.lagoon.finance lists all vaults automatically | agama.finance is our branded frontend for institutional clients. Both channels coexist |
 

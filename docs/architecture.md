@@ -7,7 +7,7 @@ Agama is built on top of the Rayls architecture, which separates private institu
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                                                                     │
-│   LAYER 1 — PRIVACY NODES                                          │
+│   LAYER 1. PRIVACY NODES                                          │
 │                                                                     │
 │   Institutional assets tokenized here                               │
 │   Debtor identities, amounts → confidential                        │
@@ -21,7 +21,7 @@ Agama is built on top of the Rayls architecture, which separates private institu
                            │
 ┌──────────────────────────┼──────────────────────────────────────────┐
 │                          │                                          │
-│   LAYER 2 — PRIVATE NETWORKS                                       │
+│   LAYER 2. PRIVATE NETWORKS                                       │
 │                                                                     │
 │   Settlement between institutions                                   │
 │   Nimofast ↔ Agama ↔ Santander                                     │
@@ -32,7 +32,7 @@ Agama is built on top of the Rayls architecture, which separates private institu
                            ▼
 ┌─────────────────────────────────────────────────────────────────────┐
 │                                                                     │
-│   LAYER 3 — PUBLIC CHAIN (live April 30, 2026)                     │
+│   LAYER 3. PUBLIC CHAIN (live April 30, 2026)                     │
 │                                                                     │
 │   ┌─────────────────┐    ┌──────────────────┐                      │
 │   │  Agama NAV      │───▶│  Lagoon Vault    │                      │

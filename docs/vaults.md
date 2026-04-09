@@ -1,6 +1,6 @@
 # Vaults
 
-## agaINV — Invoice Vault (Priority 1)
+## agaINV: Invoice Vault (Priority 1)
 
 The first Agama vault. Built on our relationship with Nimofast, it validates the entire infrastructure.
 
@@ -63,7 +63,7 @@ Built on identified relationships with Rayls partners. Each vault uses the same 
 
 | Vault | Underlying | Partner | Target APY |
 |-------|-----------|---------|-----------|
-| agaYLD | Institutional stablecoin yield (BUIDL 40% + USDY 30% + TBILL 20% + USDXP buffer 10%) | — | 4–5% |
+| agaYLD | Institutional stablecoin yield (BUIDL 40% + USDY 30% + TBILL 20% + USDXP buffer 10%) |. | 4–5% |
 | agaTRD | Letters of credit, corporate trade finance | Santander Brazil | 10–15% |
 | agaCORP | Diversified corporate invoices | Santander Brazil | 7–10% |
 | agaREC | Brazilian interbank receivables (100% of boletos) | Nuclea | 8–11% |

@@ -26,7 +26,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'V1 — Mainnet April 30',
+        text: 'V1: Mainnet April 30',
         items: [
           { text: 'V1 Overview', link: '/v1' },
           { text: 'agaINV Vault', link: '/vaults' },
@@ -37,7 +37,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'V2 — Lending + Looping',
+        text: 'V2: Lending + Looping',
         items: [
           { text: 'V2 Overview', link: '/v2' },
           { text: 'RWA Looping', link: '/looping' },
@@ -45,14 +45,14 @@ export default defineConfig({
         ]
       },
       {
-        text: 'V3 — Oracle Network',
+        text: 'V3: Oracle Network',
         items: [
           { text: 'V3 Overview', link: '/v3' },
           { text: 'Oracle Network', link: '/oracle-network' },
         ]
       },
       {
-        text: 'V4 — agaUSD',
+        text: 'V4: agaUSD',
         items: [
           { text: 'V4 Overview', link: '/v4' },
         ]
