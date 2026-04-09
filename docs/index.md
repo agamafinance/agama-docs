@@ -11,26 +11,22 @@ We do not tokenize assets. We curate and structure the financing layer.
 ## How it works
 
 ```
-RAYLS PRIVATE NODE                    RAYLS PUBLIC CHAIN
+  PRIVATE NODE              PUBLIC CHAIN
 
-  Nimofast tokenizes               Agama NAV Oracle          Lagoon Vault
-  invoices via Parfin               generates ZK proof          (ERC-7540)
+  Nimofast tokenizes        Agama Oracle           Lagoon Vault
+  invoices via Parfin       generates ZK proof     (ERC-7540)
 
-  ┌──────────────┐     ZK-verified NAV     ┌──────────┐           ┌──────────────┐
-  │  Tokenized   │────────────────▶│   NAV    │──────────▶│   agaINV     │
-  │  invoices    │  (aggregated NAV only,     │  Oracle  │  push NAV │   vault      │
-  │  (private)   │   no data)      └──────────┘           │              │
-  └──────────────┘                                         │  Deposit     │
-                                                           │  USDXP      │
-  Debtor identities                                        │  ──────▶    │
-  and amounts stay                                         │  Receive    │
-  confidential                                             │  agaINV     │
-                                                           └──────────────┘
-                                                                  │
-                                                           Token price
-                                                           rises daily
-                                                           as invoices
-                                                           mature
+  ┌──────────────┐          ┌──────────────┐       ┌──────────────┐
+  │  Tokenized   │  ZK proof│  NAV Oracle  │  NAV  │  agaINV      │
+  │  invoices    │─────────▶│              │──────▶│  vault       │
+  │  (private)   │          │  Verified    │       │              │
+  └──────────────┘          │  on-chain    │       │  USDXP in    │
+                            └──────────────┘       │  agaINV out  │
+  Debtor identities                                └──────────────┘
+  and amounts stay                                        │
+  confidential                                     Token price rises
+                                                   daily as invoices
+                                                   mature
 ```
 
 The investor deposits stablecoins (USDXP, USDr) into an Agama vault. They receive a yield-bearing LP token (agaINV, agaYLD, etc.) whose price appreciates every day as the underlying portfolio generates returns. No distributions, no rebase, no manual actions. Hold the token and its value grows.
