@@ -38,10 +38,10 @@ The first Agama vault. Built on our relationship with Nimofast, it validates the
    │   purchase                    30 days              face     │
    │   price          NAV accrues linearly             value    │
    │                                                             │
-   │   Spread = $3,000 = 3% over 30 days
-   Gross annualized: ~36%
-   Net to investors after utilization rate,
-   cash buffer, and fees: 8-16% APY       │
+   │   Spread = $3,000 = 3% over 30 days                         │
+   │   Gross annualized: ~36%                                    │
+   │   Net to investors after utilization rate,                  │
+   │   cash buffer, and fees: 8-16% APY                         │
    │                                                             │
    └─────────────────────────────────────────────────────────────┘
 ```

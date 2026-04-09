@@ -38,9 +38,9 @@ Agama is built on top of the Rayls architecture, which separates private institu
 │   │  Agama NAV      │───▶│  Lagoon Vault    │                      │
 │   │  Oracle         │    │  (ERC-7540)      │                      │
 │   │                 │    │                  │                       │
-│   │  Reads Enygma   │    │  agaINV token    │                      │
-│   │  ZK proof       │    │  Async deposits  │                      │
-│   │  Pushes NAV     │    │  KYC whitelist   │                      │
+│   │  Verifies ZK    │    │  agaINV token    │                      │
+│   │  proof on-chain  │    │  Async deposits  │                      │
+│   │  Updates NAV     │    │  KYC whitelist   │                      │
 │   └─────────────────┘    └──────────────────┘                      │
 │                                  │                                  │
 │   Gas: USDr (USD-backed)         │                                  │

@@ -48,23 +48,23 @@ PRIVACY NODE (Nimofast)
 │   ┌──────────────────────────────────────────────┐   │
 │   │  AGAMA ORACLE SIDECAR                        │   │
 │   │                                              │   │
-│   │  1. connector/privacy_node_client.ts         │   │
+│   │  1. connector/enygma_client.go         │   │
 │   │     Reads balances via view key              │   │
 │   │     Decrypts locally                         │   │
 │   │                                              │   │
-│   │  2. calculator/nav_engine.ts                 │   │
+│   │  2. calculator/nav_circuit.go                 │   │
 │   │     Computes NAV per invoice                 │   │
 │   │     Linear accrual + risk parameters         │   │
 │   │                                              │   │
-│   │  3. publisher/onchain_relay.ts               │   │
-│   │     Signs the NAV attestation                │   │
-│   │     Submits to IAgamaOracle on-chain         │   │
+│   │  3. publisher/onchain_relay.go               │   │
+│   │     Generates ZK proof via gnark                │   │
+│   │     Submits (NAV, TrancheNAV, π) to AgamaOracle         │   │
 │   └──────────────────────────────────────────────┘   │
 │                                                      │
 └────────────────────────┬─────────────────────────────┘
                          │
-                         │  Signed NAV attestation
-                         │  (aggregated value only —
+                         │  ZK proof π + NAV + tranching
+                         │  (verified NAV + tranching —
                          │   no invoice data crosses)
                          │
                          ▼
@@ -72,7 +72,7 @@ PUBLIC CHAIN
 ┌──────────────────────────────────────────────────────┐
 │                                                      │
 │   IAgamaOracle smart contract                        │
-│   Receives and validates the attestation             │
+│   Receives ZK proof, verifies on-chain via AgamaVerifier             │
 │   Updates Lagoon vault share price                   │
 │   agaINV price rises as invoices mature              │
 │                                                      │
@@ -186,12 +186,12 @@ The key difference: Chainlink's data is publicly available. Anyone can verify a 
 | Component | V1 | V2 | V3 |
 |-----------|----|----|-----|
 | NAV computation | Linear accrual, daily update | Real-time feed, multiple invoice types | Multi-source, ML risk scoring |
-| Proof model | Signed attestation (view key) | Signed attestation + audit trail | ZK proof of NAV (custom circuit on Enygma) |
+| Proof model | gnark ZK proof (Groth16) with TrancheNAV | gnark ZK proof + real-time feed | gnark ZK proof + ML risk scoring + multi-source |
 | Nodes | 1 (Nimofast) | 2-3 (Nimofast + Santander) | 5+ (full Rayls ecosystem) |
 | Third-party access | None | API preview | Full oracle network with fee structure |
-| Security | Multisig relayer, daily circuit breaker | Automated monitoring, 6h staleness | Decentralized validation, multi-relayer |
+| Security | gnark ZK proof, daily circuit breaker | Automated monitoring, 6h staleness | Decentralized validation, multi-relayer |
 
-The V3 ZK proof of NAV — a proper cryptographic proof that the portfolio value is X without revealing individual invoice data — requires building a custom circuit on top of Enygma's primitives. This is a meaningful engineering effort scoped for V3 once the network has the resources and the institutional credibility to justify the investment.
+The gnark ZK proof is deployed from V1. V3 extends it with ML risk scoring integrated into the circuit and multi-source feeds from multiple Privacy Nodes simultaneously.
 
 ## The endgame
 
