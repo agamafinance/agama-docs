@@ -8,9 +8,9 @@ The first Agama vault. Built on our relationship with Nimofast, it validates the
 |-----------|-------|
 | Underlying | Nimofast LNG and energy invoices tokenized on Rayls via Parfin |
 | Debtors | Petrobras, Shell, regulated Brazilian energy distributors |
-| Target yield | 8 to 12% APY *(to be defined with Nimofast)* |
-| Duration | 30 to 90 days, continuously renewed *(to be defined)* |
-| Privacy | Debtor identities and amounts concealed via Enygma ZK proofs |
+| Target yield | 8 to 12% APY ** |
+| Duration | 30 to 90 days, continuously renewed ** |
+| Privacy | Debtor identities and amounts concealed via Enygma privacy layer |
 | Deposit currency | USDXP (primary), USDr, USDT |
 | Minimum ticket | 50,000 USDXP |
 
@@ -24,9 +24,9 @@ The first Agama vault. Built on our relationship with Nimofast, it validates the
 
 3. NAV accrues linearly from $97,000 to $100,000 over 30 days
 
-4. Enygma generates a ZK proof of NAV without revealing debtors
+4. The Oracle Sidecar reads invoice balances via view key and publishes a signed NAV attestation on-chain. Debtor identities and amounts remain concealed by Enygma
 
-5. The proof is published on the public chain. agaINV price rises.
+5. The signed NAV attestation is published on the public chain. agaINV price rises.
 
 6. At maturity, Nimofast repays $100,000. The vault captures the spread.
 

@@ -11,7 +11,7 @@ export default defineConfig({
       { text: 'Overview', link: '/' },
       { text: 'Architecture', link: '/architecture' },
       { text: 'Vaults', link: '/vaults' },
-      { text: 'Looping', link: '/looping' },
+      { text: 'Oracle Network', link: '/oracle-network' },
     ],
     sidebar: [
       {
@@ -32,7 +32,7 @@ export default defineConfig({
         text: 'Technical',
         items: [
           { text: 'Architecture', link: '/architecture' },
-          { text: 'NAV Oracle', link: '/oracle' },
+          { text: 'NAV Oracle + Sidecar', link: '/oracle' },
           { text: 'Lagoon Integration', link: '/lagoon' },
           { text: 'Rayls Integration', link: '/rayls' },
         ]
@@ -42,6 +42,12 @@ export default defineConfig({
         items: [
           { text: 'RWA Looping', link: '/looping' },
           { text: 'Cork Protocol', link: '/cork' },
+        ]
+      },
+      {
+        text: 'Long Term Vision',
+        items: [
+          { text: 'Oracle Network V3', link: '/oracle-network' },
         ]
       },
       {
