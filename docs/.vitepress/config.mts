@@ -21,6 +21,7 @@ export default defineConfig({
           { text: 'What is Agama', link: '/' },
           { text: 'Positioning', link: '/positioning' },
           { text: 'Yield Mechanics', link: '/yield' },
+          { text: 'Business Model', link: '/business-model' },
           { text: 'Partners', link: '/partners' },
         ]
       },

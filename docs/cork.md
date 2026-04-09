@@ -58,4 +58,16 @@ The cST price is a live, public measure of perceived risk on agaINV. If the mark
 
 ## Agama deployment plan
 
-Agama will deploy the first Cork depeg market on Rayls with an LP incentive program to bootstrap insurance liquidity. This is a V2 feature, dependent on a Rayls-native lending market becoming available.
+Agama will deploy the first Cork Pool on Rayls, pairing agaINV (reference asset) with USDXP (collateral asset). This is a V2 feature, dependent on a Rayls-native lending market becoming available.
+
+**Bootstrap problem and solution.** The Cork Pool needs USDXP liquidity from LPs before looping is viable. Without LPs, there are no cST tokens, and without cST the lending market will not accept agaINV as collateral.
+
+Agama bootstraps the Cork Pool in three steps:
+
+1. Agama seeds the initial pool with protocol-owned USDXP from performance fees accumulated during V1. This provides the minimum viable liquidity.
+
+2. Early LPs receive boosted yield: they earn the cPT return (principal back at expiry) plus a share of the cST premiums paid by loopers. At the target agaINV yield of 8-16%, even a small cST premium (1-2%) generates attractive returns for pool LPs.
+
+3. Once the pool has sufficient depth, loopers can buy cST and begin Protected Loops. Each looper paying cST premium feeds the LP yield, creating a self-reinforcing cycle.
+
+The minimum viable pool size depends on the target looping volume. For the first agaINV loops at V2, an initial pool of 500k-1M USDXP is sufficient to support 2-5M in looped positions.
