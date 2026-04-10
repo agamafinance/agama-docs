@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Architecture
 
 ## Rayls three-layer system

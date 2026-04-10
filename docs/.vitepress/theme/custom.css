@@ -20,9 +20,6 @@
   background-color: #0f1219 !important;
 }
 
-.VPNavBarAppearance {
-  display: none !important;
-}
 
 .dark a.VPLink.link.VPSidebarItem.is-active .text {
   color: #ffffff !important;

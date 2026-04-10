@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Oracle Network
 
 The NAV Oracle is not just a technical component of agaINV. It is the core of Agama's long-term business.

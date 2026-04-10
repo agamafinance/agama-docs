@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Roadmap
 
 ## V1. Curator on Lagoon (April 30, 2026)

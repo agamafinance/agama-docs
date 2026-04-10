@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # RWA Looping
 
 Looping is the strategy that multiplies effective yield by using vault tokens as collateral in a lending protocol, borrowing stablecoins, and re-depositing into the vault. It is the core value multiplier used by Avantgarde Finance via Cork Protocol.

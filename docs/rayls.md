@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Rayls Integration
 
 ## Why Rayls

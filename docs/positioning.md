@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Positioning
 
 Agama is comparable to Avantgarde Finance. They are on-chain asset managers: they select strategies, deploy capital into BUIDL, Morpho and other protocols, and charge management fees on AUM. They use Enzyme as vault infrastructure on Ethereum.

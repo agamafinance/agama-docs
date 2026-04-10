@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Yield Mechanics
 
 ## Where the yield comes from

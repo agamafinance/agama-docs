@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # NAV Oracle
 
 The NAV Oracle is the core proprietary technology Agama builds. Everything else (vault shell, fees, KYC, reporting) is provided by Lagoon. The oracle is what makes Agama structurally non-replaceable, and what makes it one of the first verifiable bridges between a private institutional chain and public DeFi.

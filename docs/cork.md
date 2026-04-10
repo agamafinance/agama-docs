@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Cork Protocol
 
 Cork is not depeg insurance. Cork solves **duration risk**, the real blocker for RWA looping. This is how Avantgarde Finance uses Cork in their Protected Loops strategy.

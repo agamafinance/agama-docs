@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Lagoon Integration
 
 Agama deploys as a curator on Lagoon. We do not write, audit, or maintain any vault smart contract. The entire on-chain vault infrastructure is Lagoon's responsibility. Agama focuses exclusively on what creates value: the NAV oracle, the asset strategy, and the investor relationship.

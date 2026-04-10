@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # What is Agama
 
 Agama is the first native DeFi vault curator on Rayls. Our role is precise: take assets already tokenized by our partners, create structured vaults on top via Lagoon, and offer investors simple access with clear yield. We do not tokenize assets. We curate and structure the financing layer.

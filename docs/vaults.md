@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Vaults
 
 ## agaINV: Invoice Vault (Priority 1)

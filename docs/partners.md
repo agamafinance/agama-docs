@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Partners
 
 ## Identified Rayls ecosystem partners

@@ -1,3 +1,6 @@
+---
+title: Agama Documentation
+---
 # Business Model
 
 ## Revenue streams

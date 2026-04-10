@@ -3,11 +3,14 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Agama Documentation',
   titleTemplate: 'Agama Documentation',
+  transformPageData(pageData) {
+    pageData.title = 'Agama Documentation'
+    pageData.titleTemplate = 'Agama Documentation'
+  },
   description: 'Institutional RWA Vault Curator on Rayls',
-  appearance: 'dark',
+  appearance: true,
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }],
-    ['script', {}, `document.addEventListener('DOMContentLoaded', () => { document.title = 'Agama Documentation'; }); new MutationObserver(() => { if (document.title !== 'Agama Documentation') document.title = 'Agama Documentation'; }).observe(document.querySelector('title'), { childList: true });`]
+    ['link', { rel: 'icon', href: '/favicon.png', type: 'image/png', sizes: '32x32' }],
   ],
   themeConfig: {
     logo: { src: '/logo.svg', alt: 'Agama' },
