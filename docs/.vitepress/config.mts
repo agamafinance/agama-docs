@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Agama Documentation',
   titleTemplate: 'Agama Documentation',
   description: 'Institutional RWA Vault Curator on Rayls',
+  appearance: 'dark',
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['script', {}, `document.addEventListener('DOMContentLoaded', () => { document.title = 'Agama Documentation'; }); new MutationObserver(() => { if (document.title !== 'Agama Documentation') document.title = 'Agama Documentation'; }).observe(document.querySelector('title'), { childList: true });`]
@@ -69,6 +70,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
+      { icon: 'x', link: 'https://x.com/agama' },
       { icon: 'github', link: 'https://github.com/agama-fi' },
     ],
   }
