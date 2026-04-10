@@ -13,7 +13,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.svg' }],
   ],
   themeConfig: {
-    logo: { src: '/logo.svg', alt: 'Agama' },
+    logo: { src: '/agama-white.svg', alt: 'Agama' },
     siteTitle: false,
     nav: [
       { text: 'Vision', link: '/' },
