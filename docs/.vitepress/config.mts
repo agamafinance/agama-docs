@@ -37,7 +37,7 @@ export default defineConfig({
         text: 'V1: Mainnet April 30',
         items: [
           { text: 'V1 Overview', link: '/v1' },
-          { text: 'agaINV Vault', link: '/vaults' },
+          { text: 'agaNMF Vault', link: '/vaults' },
           { text: 'NAV Oracle (gnark)', link: '/oracle' },
           { text: 'Architecture', link: '/architecture' },
           { text: 'Lagoon Integration', link: '/lagoon' },
