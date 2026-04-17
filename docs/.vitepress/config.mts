@@ -73,8 +73,8 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'x', link: 'https://x.com/agama' },
-      { icon: 'github', link: 'https://github.com/agama-fi' },
+      { icon: 'x', link: 'https://x.com/agamafinance' },
+      { icon: 'github', link: 'https://github.com/agamafinance' },
     ],
   }
 })
